@@ -13,4 +13,13 @@ class Article
     public $relative_file_location;
     public $publisher_id;
     public $page_reference;
+
+    function __construct()
+    {
+        $this->id = 1;
+        $this->title = 'kushal';
+        $this->relative_file_location = 'stack';
+        $this->publisher_id = 2;
+        $this->page_reference = 3;
+    }
 }
