@@ -1,7 +1,7 @@
 <?php
 function __autoload($class_name)
 {
-    include_once 'class.' . $class_name;
+    include_once 'class.' . $class_name . '.inc';
 }
 
 $my_publisher = new Publisher();
