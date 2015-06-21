@@ -1,28 +1,14 @@
 <?php
-require_once "vendor/autoload.php";
-$config = array(
-    // required
-    'access_token' => '4cccea83a0e54bc883c623883d373e1e',
-    // optional - environment name. any string will do.
-    'environment' => 'production',
-    // optional - path to directory your code is in. used for linking stack traces.
-    'root' => '/Users/brian/www/myapp'
-);
-Rollbar::init($config);
 function __autoload($class_name)
 {
     include_once 'class.' . $class_name . '.inc';
 }
 
-try {
-    $my_publisher = new Publisher();
-    $my_publisher->id = 1;
-    $my_publisher->title = "Pearson";
-    $my_publisher->location = "New York";
-    $my_publisher->year = $my_publisher;
-} catch (Exception $e) {
-    Rollbar::report_exception($e);
-}
+$my_publisher = new Publisher();
+$my_publisher->id = 1;
+$my_publisher->title = "Pearson";
+$my_publisher->location = "New York";
+$my_publisher->year = "2010";
 
 $my_article = new Article();
 $my_article->id = 1;
