@@ -13,4 +13,5 @@ class Article
     public $relative_file_location;
     public $publisher_id;
     public $page_reference;
+    public $author_list;
 }
