@@ -15,9 +15,7 @@ $PageTitle = "Home";
 <?php include_once("display_analytics_tracking.php");
 include_once("display_navigation_bar.php") ?>
 <?php
-if (isset($type_unsafe_url_input) && $type_unsafe_url_input == "admin") {
-    include_once "display_admin.php";
-} elseif (isset($course_unsafe_url_input)) {
+if (isset($course_unsafe_url_input)) {
     if (isset($type_unsafe_url_input) && $type_unsafe_url_input == "syllabus") {
         include_once "display_syllabus.php";
     }
