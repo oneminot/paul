@@ -10,7 +10,9 @@ $assignment_id_unsafe_url_input = filter_input(INPUT_GET, "id");
 <body>
 <?php include_once("display_analytics_tracking.php") ?>
 <?php include_once("display_navigation_bar.php") ?>
-<?php echo $id; ?>
+<?php if (isset($assignment_id_unsafe_url_input)) {
+    echo $assignment_id_unsafe_url_input;
+} ?>
 
 </body>
 </html>
