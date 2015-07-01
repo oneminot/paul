@@ -23,7 +23,7 @@ if (isset($course_unsafe_url_input)) {
         include_once "display_assignment.php";
     }
     if (isset($type_unsafe_url_input) && $type_unsafe_url_input == "file") {
-        include_once "course.php";
+        include_once "display_file.php";
     }
 } else {
     include_once "display_home.php";
