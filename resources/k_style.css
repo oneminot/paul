@@ -1,10 +1,13 @@
-body {
-    margin-left: 20px;
-    margin-right: 20px;
+html, body {
+    margin: 0;
+    border: 0;
+    width: 100%;
 }
 
-.k_center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    padding: 0 20px;
+}
+
+.container {
+    margin: 0 auto; /* in case you want to set a fixed width on this as well */
 }

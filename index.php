@@ -11,7 +11,7 @@ $PageTitle = "Home";
 <!doctype html>
 <html lang="en">
 <?php include_once 'display_header.php'; ?>
-<body>
+<body class="container k_style">
 <?php include_once("display_analytics_tracking.php");
 include_once("display_navigation_bar.php") ?>
 <?php
