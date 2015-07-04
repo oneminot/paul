@@ -18,7 +18,8 @@
 
         <div class="col-md-4 pull-left">
             <!--    <img src="/resources/paul.png" alt="Instructor profile photo"/>-->
-            <img src="<?php echo $k_site_url_prefix ?>/resources/paul.png" alt="Instructor profile photo"/>
+            <img class="img-responsive img-rounded" src="<?php echo $k_site_url_prefix ?>/resources/paul.png"
+                 alt="Instructor profile photo"/>
         </div>
     </div>
     <article class="paul-courses">
