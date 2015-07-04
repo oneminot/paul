@@ -4,22 +4,23 @@
             Paul Loree
         </h1>
 
-        <p>
-            <span id="InstructorPosition">Assistant Professor of Computer Science</span><br/>
-            <a href="//www.minotstateu.edu/mathcs/">Department of Mathematics and Computer Science</a><br/>
-            <a href="//www.minotstateu.edu/">Minot State University</a><br/>
-            307 Model Hall<br/>
-            Minot, ND 58707<br/>
-            <br/>
-            Office: (701) 858-3077 <br/>
-            Email: <a href="mailto:paul.loree@minotstateu.edu">paul.loree@minotstateu.edu</a><br/>
-            <a href="<?php echo $k_site_url_prefix ?>/resources/CV.pdf">Curriculum Vitae</a>
-        </p>
-
-        <div class="col-md-4 pull-left">
+        <div class="col-md-2 pull-left">
             <!--    <img src="/resources/paul.png" alt="Instructor profile photo"/>-->
             <img class="img-responsive img-rounded" src="<?php echo $k_site_url_prefix ?>/resources/paul.png"
                  alt="Instructor profile photo"/>
+        </div>
+        <div class="col-md-4 pull-left">
+            <p>
+                <span id="InstructorPosition">Assistant Professor of Computer Science</span><br/>
+                <a href="//www.minotstateu.edu/mathcs/">Department of Mathematics and Computer Science</a><br/>
+                <a href="//www.minotstateu.edu/">Minot State University</a><br/>
+                307 Model Hall<br/>
+                Minot, ND 58707<br/>
+                <br/>
+                Office: (701) 858-3077 <br/>
+                Email: <a href="mailto:paul.loree@minotstateu.edu">paul.loree@minotstateu.edu</a><br/>
+                <a href="<?php echo $k_site_url_prefix ?>/resources/CV.pdf">Curriculum Vitae</a>
+            </p>
         </div>
     </div>
     <article class="paul-courses">
