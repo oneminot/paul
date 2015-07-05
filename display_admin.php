@@ -36,6 +36,9 @@ include_once("display_navigation_bar.php");
         $admin_user->set_name($_POST['k_username']);
         $admin_user->set_password($_POST['k_password']);
         var_dump($admin_user);
+        if (password_verify($_POST['k_password'], $admin_user->password)) {
+            echo "success!";
+        }
     }
     ?>
 </div> <!-- /container -->
