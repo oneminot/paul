@@ -30,8 +30,8 @@ include_once("display_navigation_bar.php");
             <button type="submit" class="btn btn-default">Authenticate</button>
         </p>
     </form>
-    <?php if (isset($_POST['k_username']) && isset($_POST['k_password'])) : ?>
-        <?php
+    <?php
+    if (isset($_POST['k_username']) && isset($_POST['k_password'])) {
         $user_input = htmlspecialchars($_POST['k_password']);
         // let the salt be automatically generated
         $hashed_password = password_hash($_POST['k_password'], PASSWORD_BCRYPT);
@@ -43,8 +43,8 @@ include_once("display_navigation_bar.php");
         } else {
             echo "password is invalid";
         }
-        ?>
-    <?php endif; ?>
+    }
+    ?>
 </div> <!-- /container -->
 </body>
 </html>
