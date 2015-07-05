@@ -15,22 +15,36 @@ $PageTitle = "Home";
 <?php
 include_once("display_analytics_tracking.php");
 include_once("display_navigation_bar.php");
-if (isset($_POST['inputUsername']) && isset($_POST['inputPassword'])) {
-    $user_input = htmlspecialchars($_POST['inputPassword']);
-    $hashed_password = password_hash($_POST['k_password'], PASSWORD_BCRYPT);
-    echo $hashed_password;
-}
 ?>
 <div class="container">
+    <form action="display_admin.php" method="post">
+        <p>
+            <input type="text" name="k_username" placeholder="Username" autofocus="autofocus">
+        </p>
 
-    <form class="form-signin" action="display_admin.php" method="post">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputUsername" class="sr-only">Email address</label>
-        <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <p>
+            <input type="password" name="k_password" placeholder="Password">
+        </p>
+
+        <p>
+            <button type="submit" class="btn btn-default">Authenticate</button>
+        </p>
     </form>
+    <?php if (isset($_POST['k_username']) && isset($_POST['k_password'])) : ?>
+        <?php
+        $user_input = htmlspecialchars($_POST['k_password']);
+        // let the salt be automatically generated
+        $hashed_password = password_hash($_POST['k_password'], PASSWORD_BCRYPT);
+        $admin_user = new User();
+        $admin_user->password = $hashed_password;
+        echo "<pre>" . var_export($admin_user, true) . "</pre>";
+        if (password_verify($user_input, $hashed_password)) {
+            echo "password is valid";
+        } else {
+            echo "password is invalid";
+        }
+        ?>
+    <?php endif; ?>
 </div> <!-- /container -->
 </body>
 </html>

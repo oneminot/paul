@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4" />
+<project version="4">
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="" phpunit_phar_path="" />
+      <phpunit_by_interpreter interpreter_id="87517610-33aa-4526-9da4-d10160ff8d0b" interpreter_name="Remote PHP 5.6" load_method="CUSTOM_LOADER" custom_loader_path="/var/www/awesome/paul/vendor/autoload.php" phpunit_phar_path="/var/www/awesome/paul/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+</project>
