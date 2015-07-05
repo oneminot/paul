@@ -25,4 +25,13 @@ class User
         $this->password = password_hash($plain_text_password, PASSWORD_BCRYPT);
     }
 
+    function verify_password($unsafe_input_password)
+    {
+        if (password_verify($unsafe_input_password, $this->password)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

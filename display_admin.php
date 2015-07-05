@@ -39,6 +39,11 @@ include_once("display_navigation_bar.php");
         if (password_verify($_POST['k_password'], $admin_user->password)) {
             echo "success!";
         }
+        if ($admin_user->verify_password($_POST['k_password'])) {
+            echo "success!";
+        } else {
+            echo "verification failed";
+        }
     }
     ?>
 </div> <!-- /container -->
