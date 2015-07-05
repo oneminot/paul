@@ -92,7 +92,7 @@
                 <a href="//www.ndsu.edu">North Dakota State University</a>, 2010
                 <ul>
                     <li>Thesis:
-                        <a href="/resources/PID969207.pdf">
+                        <a href="<?php echo $k_site_url_prefix ?>/resources/PID969207.pdf">
                             Post-Deployment Key Management in Heterogeneous Wireless Sensor Networks
                         </a>
                     </li>
