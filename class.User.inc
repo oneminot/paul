@@ -27,9 +27,12 @@ class User
 
     function verify_password($unsafe_input_password)
     {
+        $this->last_attempt = new DateTime();
         if (password_verify($unsafe_input_password, $this->password)) {
+            $this->attempt_count = 0;
             return true;
         } else {
+            $this->attempt_count += 1;
             return false;
         }
     }
