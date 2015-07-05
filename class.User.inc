@@ -13,4 +13,16 @@ class User
     public $password;
     public $attempt_count;
     public $last_attempt;
+
+    function set_name($unsafe_input_name)
+    {
+        $this->name = htmlspecialchars(trim($unsafe_input_name));
+    }
+
+    function set_password($unsafe_input_password)
+    {
+        $plain_text_password = htmlspecialchars($unsafe_input_password);
+        $this->password = password_hash($plain_text_password, PASSWORD_BCRYPT);
+    }
+
 }
