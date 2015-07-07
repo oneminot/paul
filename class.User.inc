@@ -34,6 +34,9 @@ class User
             $this->attempt_count = 0;
             return true;
         } else {
+            $my_time = new DateTime('NOW', new DateTimeZone('UTC'));
+            $my_time_difference = $attempt_datetime->diff($my_time);
+            var_dump($my_time_difference);
             $this->attempt_count += 1;
             $this->last_attempt = clone $attempt_datetime;
             return false;
