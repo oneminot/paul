@@ -17,33 +17,33 @@ include_once("display_analytics_tracking.php");
 include_once("display_navigation_bar.php");
 ?>
 <div class="container">
-    <form action="display_admin.php" method="post">
-        <p>
-            <input type="text" name="k_username" placeholder="Username" autofocus="autofocus">
-        </p>
+    <form class="form-signin" action="display_admin.php" method="post">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="k_username" class="sr-only">Email address</label>
+        <input type="text" id="k_username" class="form-control" name="k_username" placeholder="Username" required
+               autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="k_password" class="form-control" name="k_password" placeholder="Password" required>
 
-        <p>
-            <input type="password" name="k_password" placeholder="Password">
-        </p>
-
-        <p>
-            <button type="submit" class="btn btn-default">Authenticate</button>
-        </p>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     </form>
     <?php
     if (isset($_POST['k_username']) && isset($_POST['k_password'])) {
         $admin_user = new User();
+        $admin_user->id = 1;
         $admin_user->set_name($_POST['k_username']);
-        $admin_user->set_password($_POST['k_password']);
-        var_dump($admin_user);
-        if (password_verify($_POST['k_password'], $admin_user->password)) {
-            echo "success!";
-        }
+        $admin_user->set_password("fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf96");
         if ($admin_user->verify_password($_POST['k_password'])) {
             echo "success!";
         } else {
             echo "verification failed";
         }
+        var_dump($admin_user);
     }
     ?>
 </div> <!-- /container -->
