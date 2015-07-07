@@ -38,6 +38,8 @@ include_once("display_navigation_bar.php");
         $admin_user->id = 1;
         $admin_user->set_name($_POST['k_username']);
         $admin_user->set_password("fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf96");
+        $admin_user->attempt_count = 0;
+        $admin_user->last_attempt = new DateTime('yesterday', new DateTimeZone('UTC'));
         if ($admin_user->verify_password($_POST['k_password'])) {
             echo "success!";
         } else {
