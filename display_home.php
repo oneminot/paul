@@ -144,8 +144,9 @@
             Organizations and Honors
         </h3>
         <ul>
-            <li><a href="//upe.acm.org/">Upsilon Pi Epsilon International Honor Society for
-                    the Computing and Information Disciplines</a></li>
+            <li><a href="//upe.acm.org/">
+                    Upsilon Pi Epsilon International Honor Society for the Computing and Information Disciplines
+                </a></li>
             <li><a href="//www.ieee.org/">Institute of Electrical and Electronic Engineers
                     (IEEE)</a>
                 <ul>
@@ -167,5 +168,10 @@
                 </a>
             </li>
         </ul>
+    </article>
+    <article>
+        <h1>Publications</h1>
+        <?php
+        ?>
     </article>
 </div>
