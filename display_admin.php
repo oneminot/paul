@@ -19,7 +19,7 @@ include_once("display_navigation_bar.php");
 <div class="container">
     <form class="form-signin" action="display_admin.php" method="post">
         <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="k_username" class="sr-only">Email address</label>
+        <label for="k_username" class="sr-only">Username</label>
         <input type="text" id="k_username" class="form-control" name="k_username" placeholder="Username" required
                autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
