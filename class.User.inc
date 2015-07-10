@@ -8,8 +8,6 @@
  */
 class User
 {
-    const TOTAL_NUMBER_OF_ATTEMPTS_ALLOWED = 5;
-    const TIME_BEFORE_ANOTHER_ATTEMPT_ALLOWED_IN_MINUTES = 2;
     public $id;
     public $name;
     public $password;
@@ -39,5 +37,4 @@ class User
             return false;
         }
     }
-
 }
