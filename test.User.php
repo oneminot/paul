@@ -6,14 +6,10 @@
  * Date: 7/9/2015
  * Time: 5:03 PM
  */
+
+require_once "class.User.inc";
 class UserTest extends \PHPUnit_Framework_TestCase
 {
-    function __autoload($class_name)
-    {
-        include_once 'class.' . $class_name . '.inc';
-        include_once 'vendor/autoload.php';
-    }
-
     public function test_verify_password_works()
     {
         $my_password = "fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf96";
