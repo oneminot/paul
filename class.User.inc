@@ -21,7 +21,7 @@ class User
 
     function set_password($unsafe_input_password)
     {
-        $plain_text_password = $unsafe_input_password;
+        $plain_text_password = addslashes($unsafe_input_password);
         $this->password = password_hash($plain_text_password, PASSWORD_BCRYPT);
     }
 
