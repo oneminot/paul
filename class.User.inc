@@ -28,7 +28,7 @@ class User
     function verify_password($unsafe_input_password)
     {
         $attempt_datetime = new DateTime('NOW', new DateTimeZone('UTC'));
-        if (password_verify($unsafe_input_password, $this->password)) {
+        if (password_verify(addslashes($unsafe_input_password), $this->password)) {
             $this->attempt_count = 0;
             return true;
         } else {
