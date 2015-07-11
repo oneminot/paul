@@ -1,10 +1,8 @@
 <?php
-function __autoload($class_name)
-{
-    include_once 'class.' . $class_name . '.inc';
-    include_once 'vendor/autoload.php';
-    include_once 'oci_connect.php';
-}
+spl_autoload_register(function ($class) {
+    include $class . '.inc';
+});
+include_once 'vendor/autoload.php';
 
 $PageTitle = "Home";
 ?>

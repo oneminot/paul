@@ -6,6 +6,8 @@
  * Date: 6/17/2015
  * Time: 1:12 PM
  */
+namespace Kus;
+namespace Kus;
 class RepeatDays
 {
     public $repeat_event_id;

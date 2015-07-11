@@ -6,6 +6,7 @@
  * Date: 6/21/2015
  * Time: 6:23 PM
  */
+namespace Kus;
 class ArticleAuthor extends Author
 {
     public $sequence_number;

@@ -6,6 +6,7 @@
  * Date: 6/17/2015
  * Time: 1:20 PM
  */
+namespace Kus;
 class Course
 {
     public $id;

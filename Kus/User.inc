@@ -6,6 +6,7 @@
  * Date: 6/17/2015
  * Time: 1:10 PM
  */
+namespace Kus;
 class User
 {
     public $id;
@@ -27,7 +28,7 @@ class User
 
     function verify_password($unsafe_input_password)
     {
-        $attempt_datetime = new DateTime('NOW', new DateTimeZone('UTC'));
+        $attempt_datetime = new \DateTime('NOW', new \DateTimeZone('UTC'));
         if (password_verify(addslashes($unsafe_input_password), $this->password)) {
             $this->attempt_count = 0;
             return true;
