@@ -37,6 +37,6 @@ class UserTest extends \PHPUnit_Framework_TestCase
         $admin_user->set_password($my_password);
         $admin_user->attempt_count = 0;
         $admin_user->last_attempt = new DateTime('yesterday', new DateTimeZone('UTC'));
-        $this->assertFalse($admin_user->verify_password($my_password));
+        $this->assertTrue($admin_user->verify_password($my_password));
     }
 }
