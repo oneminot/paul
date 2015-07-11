@@ -10,8 +10,6 @@
 require_once "class.User.inc";
 class UserTest extends \PHPUnit_Framework_TestCase
 {
-    const TOTAL_NUMBER_OF_ATTEMPTS_ALLOWED = 5;
-    const TIME_BEFORE_ANOTHER_ATTEMPT_ALLOWED_IN_MINUTES = 2;
     public function test_verify_password_works()
     {
         $my_password = "fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf96";
