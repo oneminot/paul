@@ -7,8 +7,9 @@
  * Time: 5:03 PM
  */
 spl_autoload_register(function ($class) {
-    include 'class.' . $class . '.inc';
+    include $class . '.inc';
 });
+include_once 'vendor/autoload.php';
 class UserTest extends \PHPUnit_Framework_TestCase
 {
     public function test_verify_password_works()
