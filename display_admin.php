@@ -23,7 +23,8 @@ include_once("display_navigation_bar.php");
 ?>
 <div class="container">
     <form class="form-signin" action="display_admin.php" method="post">
-        <h2 class="form-signin-heading">Please sign in</h2>
+        <h2 class="form-signin-heading">Please sign in
+            fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf96</h2>
         <label for="k_username" class="sr-only">Username</label>
         <input type="text" id="k_username" class="form-control" name="k_username" placeholder="Username" required
                autofocus>
@@ -46,9 +47,9 @@ include_once("display_navigation_bar.php");
         $admin_user->attempt_count = 0;
         $admin_user->last_attempt = new DateTime('yesterday', new DateTimeZone('UTC'));
         if ($admin_user->verify_password($_POST['k_password'])) {
-            echo "success!";
+            echo "<script>alert(\"Authentication succeeded\");</script>";
         } else {
-            echo "verification failed";
+            echo "<script>alert(\"Authentication failed\");</script>";
         }
         var_dump($admin_user);
     }
