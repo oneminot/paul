@@ -1,14 +1,4 @@
 {
-  "name": "vendor_name/package_name",
-  "description": "description_text",
-  "minimum-stability": "stable",
-  "license": "proprietary",
-  "authors": [
-    {
-      "name": "author's name",
-      "email": "email@example.com"
-    }
-  ],
   "require": {
     "components/jquery": "2.1.4",
     "twbs/bootstrap": "v3.3.5",
