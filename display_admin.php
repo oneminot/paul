@@ -29,7 +29,7 @@ include_once("display_navigation_bar.php");
     </form>
     <?php
     if (isset($_POST['k_username']) && isset($_POST['k_password'])) {
-        $admin_user = new Kus\Auth\User();
+        $admin_user = new kus\auth\User();
         $admin_user->id = 1;
         $admin_user->set_name($_POST['k_username']);
         $admin_user->set_password("fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf96");
