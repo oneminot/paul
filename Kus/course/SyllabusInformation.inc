@@ -6,7 +6,7 @@
  * Date: 6/17/2015
  * Time: 1:23 PM
  */
-namespace Kus;
+namespace kus\course;
 class SyllabusInformation
 {
     public $id;

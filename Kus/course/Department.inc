@@ -6,8 +6,8 @@
  * Date: 6/17/2015
  * Time: 1:19 PM
  */
-namespace Kus;
-class Semester
+namespace kus\course;
+class Department
 {
     public $id;
     public $name;

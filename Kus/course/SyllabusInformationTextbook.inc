@@ -6,7 +6,7 @@
  * Date: 6/17/2015
  * Time: 2:33 PM
  */
-namespace Kus;
+namespace kus\course;
 class SyllabusInformationTextbook
 {
     public $textbook_id;

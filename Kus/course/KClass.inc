@@ -4,13 +4,13 @@
  * Created by PhpStorm.
  * User: minot_000
  * Date: 6/17/2015
- * Time: 1:20 PM
+ * Time: 1:16 PM
  */
-namespace Kus;
-class Course
+namespace kus\course;
+class KClass
 {
     public $id;
-    public $department_id;
     public $number;
-    public $description;
+    public $course_id;
+    public $semester_year_id;
 }

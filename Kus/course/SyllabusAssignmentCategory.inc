@@ -6,7 +6,7 @@
  * Date: 6/17/2015
  * Time: 2:20 PM
  */
-namespace Kus;
+namespace kus\course;
 class SyllabusAssignmentCategory
 {
     public $syllabus_id;

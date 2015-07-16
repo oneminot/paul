@@ -6,7 +6,7 @@
  * Date: 6/17/2015
  * Time: 1:13 PM
  */
-namespace Kus;
+namespace kus\course;
 class RepeatEvent
 {
     public $id;

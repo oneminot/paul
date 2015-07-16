@@ -6,7 +6,7 @@
  * Date: 6/17/2015
  * Time: 1:22 PM
  */
-namespace Kus;
+namespace kus\course;
 class AssignmentCategory
 {
     public $id;
