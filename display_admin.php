@@ -1,16 +1,5 @@
 <?php
-//function __autoload($class_name)
-//{
-//    include_once 'class.' . $class_name . '.inc';
-//    include_once 'vendor/autoload.php';
-//    include_once 'oci_connect.php';
-//}
-
-spl_autoload_register(function ($class) {
-    include $class . '.inc';
-});
 include_once 'vendor/autoload.php';
-
 $PageTitle = "Home";
 ?>
 <!doctype html>
@@ -40,7 +29,7 @@ include_once("display_navigation_bar.php");
     </form>
     <?php
     if (isset($_POST['k_username']) && isset($_POST['k_password'])) {
-        $admin_user = new Kus\User();
+        $admin_user = new Kus\Auth\User();
         $admin_user->id = 1;
         $admin_user->set_name($_POST['k_username']);
         $admin_user->set_password("fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf96");

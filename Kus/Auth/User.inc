@@ -6,7 +6,7 @@
  * Date: 6/17/2015
  * Time: 1:10 PM
  */
-namespace Kus;
+namespace Kus\Auth;
 class User
 {
     public $id;

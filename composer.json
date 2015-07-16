@@ -3,5 +3,10 @@
     "components/jquery": "2.1.4",
     "twbs/bootstrap": "v3.3.5",
     "phpunit/phpunit": "4.7.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kus\\": "Kus"
+    }
   }
 }
