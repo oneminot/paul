@@ -1,44 +1,41 @@
 <?php
-spl_autoload_register(function ($class) {
-    include $class . '.inc';
-});
 include_once 'vendor/autoload.php';
 
-$my_publisher = new Kus\Publisher();
+$my_publisher = new Kus\Publication\Publisher();
 $my_publisher->id = 1;
 $my_publisher->title = "Pearson";
 $my_publisher->location = "New York";
 $my_publisher->year = "2010";
 
-$my_author = new Kus\Author();
+$my_author = new Kus\Publication\Author();
 $my_author->id = 1;
 $my_author->name = "Professor Plum";
 
-$your_author = new Kus\Author();
+$your_author = new Kus\Publication\Author();
 $your_author->id = 2;
 $your_author->name = "Professor Slughorn";
 
-$my_author_article = new Kus\Author_Article();
+$my_author_article = new Kus\Publication\Author_Article();
 //$my_author_article->article_id = $my_article;
 $my_author_article->author_id = $my_author;
 $my_author_article->sequence_number = 2;
 
-$my_article_author = new Kus\ArticleAuthor();
+$my_article_author = new Kus\Publication\ArticleAuthor();
 $my_article_author->id = $my_author->id;
 $my_article_author->name = $my_author->name;
 $my_article_author->sequence_number = $my_author_article->sequence_number;
 
-$your_author_article = new Kus\Author_Article();
+$your_author_article = new Kus\Publication\Author_Article();
 //$your_author_article->article_id = $my_article;
 $your_author_article->author_id = $my_author;
 $your_author_article->sequence_number = 3;
 
-$your_article_author = new Kus\ArticleAuthor();
+$your_article_author = new Kus\Publication\ArticleAuthor();
 $your_article_author->id = $your_author->id;
 $your_article_author->name = $your_author->name;
 $your_article_author->sequence_number = $your_author_article->sequence_number;
 
-$my_article = new Kus\Article();
+$my_article = new Kus\Publication\Article();
 $my_article->id = 1;
 $my_article->title = "Article title";
 $my_article->relative_file_location = "p1.pdf";

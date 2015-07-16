@@ -1,6 +1,6 @@
 <?php
 include_once 'vendor/autoload.php';
-$PageTitle = "Home";
+$PageTitle = "Administration";
 ?>
 <!doctype html>
 <html lang="en">
