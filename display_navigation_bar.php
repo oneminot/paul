@@ -1,4 +1,4 @@
-<?php $k_course_page = "/"; ?>
+<?php $k_course_page = "/index.php"; ?>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
