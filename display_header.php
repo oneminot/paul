@@ -31,4 +31,6 @@ $k_environment = "dev";
           href="<?php echo $k_site_url_prefix ?>/resources/k_style.css">
 
     <link rel="shortcut icon" type="image/png" href="<?php echo $k_site_url_prefix ?>/resources/paul.png">
+    <meta name="msapplication-TileColor" content="#424242"/>
+    <meta name="msapplication-square150x150logo" content="/resources/paul.png"/>
 </head>
