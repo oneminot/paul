@@ -9,11 +9,12 @@ $PageTitle = "Administration";
 <?php
 include_once("display_analytics_tracking.php");
 include_once("display_navigation_bar.php");
+$demo_password = "fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf96";
 ?>
 <div class="container">
     <form class="form-signin" action="display_admin.php" method="post">
         <h2 class="form-signin-heading">Please sign in
-            fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf96</h2>
+            <?php echo $demo_password ?></h2>
         <label for="k_username" class="sr-only">Username</label>
         <input type="text" id="k_username" class="form-control" name="k_username" placeholder="Username" required
                autofocus>
@@ -32,7 +33,7 @@ include_once("display_navigation_bar.php");
         $admin_user = new Kus\Auth\User();
         $admin_user->id = 1;
         $admin_user->set_name($_POST['k_username']);
-        $admin_user->set_password("fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf96");
+        $admin_user->set_password($demo_password);
         $admin_user->attempt_count = 0;
         $admin_user->last_attempt = new DateTime('yesterday', new DateTimeZone('UTC'));
         if ($admin_user->verify_password($_POST['k_password'])) {
@@ -43,6 +44,12 @@ include_once("display_navigation_bar.php");
         var_dump($admin_user);
     }
     ?>
+    <p>
+        For this demonstration, please use the username
+    <pre>admin</pre>
+    and the password
+    <pre><?php echo $demo_password ?></pre>
+    </p>
 </div> <!-- /container -->
 </body>
 </html>
