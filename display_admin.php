@@ -13,8 +13,7 @@ $demo_password = "fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf9
 ?>
 <div class="container">
     <form class="form-signin" action="display_admin.php" method="post">
-        <h2 class="form-signin-heading">Please sign in
-            <?php echo $demo_password ?></h2>
+        <h2 class="form-signin-heading">Please sign in</h2>
         <label for="k_username" class="sr-only">Username</label>
         <input type="text" id="k_username" class="form-control" name="k_username" placeholder="Username" required
                autofocus>
