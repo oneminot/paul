@@ -6,7 +6,7 @@
  * Date: 6/17/2015
  * Time: 1:05 PM
  */
-namespace kus\publication;
+namespace Kus\Publication;
 class Author
 {
     public $id;

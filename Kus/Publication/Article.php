@@ -6,7 +6,7 @@
  * Date: 6/17/2015
  * Time: 1:01 PM
  */
-namespace kus\publication;
+namespace Kus\Publication;
 
 class Article
 {
