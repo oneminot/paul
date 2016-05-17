@@ -15,6 +15,7 @@ file_put_contents($file, $current);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="google-site-verification" content="FZYurFk-XpJro76JOdMM8WhoxWaV8RlEK5cvKfZsMK8" />
     <title>
         Paul Loree
         <?php
