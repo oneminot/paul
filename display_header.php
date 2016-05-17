@@ -3,6 +3,13 @@ $course_unsafe_url_input = filter_input(INPUT_GET, "course");
 $type_unsafe_url_input = filter_input(INPUT_GET, "type");
 $k_site_url_prefix = ".";
 $k_environment = "dev";
+$file = 'visitors.txt'; 
+$current = file_get_contents($file); 
+$current  .= $_SERVER['REMOTE_ADDR']; 
+$current .= "\t"; 
+$current .= date('d/m/Y H:i:s'); 
+$current .= "\n";  
+file_put_contents($file, $current);
 ?>
 <head>
     <meta charset="utf-8">
