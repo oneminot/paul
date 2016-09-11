@@ -23,8 +23,18 @@ before_script:
 
 services:
 - mysql
+- postgres
 
 variables:
   # Configure mysql service (https://hub.docker.com/_/mysql/)
   MYSQL_DATABASE: hello_world_test
   MYSQL_ROOT_PASSWORD: mysql
+
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_DB: hello_world_test
+
+test:mysql:
+  script:
+  - vendor/bin/phpunit --configuration phpunit_mysql.xml --coverage-text
+  - vendor/bin/phpunit --configuration phpunit_pgsql.xml --coverage-text
