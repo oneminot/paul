@@ -43,7 +43,7 @@ $my_article->page_reference = "p7-9";
 $my_article->publisher_id = $my_publisher;
 $my_article->author_list = array($my_article_author, $your_article_author);
 
-var_dump($my_article);
+highlight_string("<?php\n\$data =\n" . var_export($my_article, true) . ";\n?>");
 //object(kus\Article)[10]
 //  public 'id' => int 1
 //  public 'title' => string 'Article title' (length=13)
