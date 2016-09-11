@@ -37,4 +37,3 @@ variables:
 test:mysql:
   script:
   - vendor/bin/phpunit --configuration phpunit_mysql.xml --coverage-text
-  - vendor/bin/phpunit --configuration phpunit_pgsql.xml --coverage-text
