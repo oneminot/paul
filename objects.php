@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL);
 include_once 'vendor/autoload.php';
 
 $my_publisher = new Kus\Publication\Publisher();
