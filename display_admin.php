@@ -40,7 +40,7 @@ $demo_password = "fh7ZVHma7tVEGKafmd99gybmOHK39as7qgtBJFySImIZHF0OIBjnv7Q4SnBZf9
         } else {
             echo "<script>alert(\"Authentication failed\");</script>";
         }
-        var_dump($admin_user);
+        highlight_string("<?php\n\$data =\n" . var_export($admin_user, true) . ";\n?>");
     }
     ?>
     <p>
